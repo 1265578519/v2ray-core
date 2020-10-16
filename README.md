@@ -4,8 +4,8 @@ bash <(curl -L -s https://install.direct/go.sh)
 ```
 那么代替的命令就是
 ```
-bash <(curl -L -s https://raw.githubusercontent.com/1265578519/v2ray-core/master/release/install-release.sh)
-yum -y install wget;wget --no-check-certificate https://raw.githubusercontent.com/1265578519/v2ray-core/master/release/v2ray-start.sh -O v2ray-start.sh;sh ./v2ray-start.sh
+bash <(curl -L -s https://raw.githubusercontent.com/1265578519/v2ray-core/main/release/install-release.sh)
+yum -y install wget;wget --no-check-certificate https://raw.githubusercontent.com/1265578519/v2ray-core/main/release/v2ray-start.sh -O v2ray-start.sh;sh ./v2ray-start.sh
 ```
 经过修改可以在centos 6中正常安装使用，会自动安装服务和替换配置文件为ws模式并且启用AEAD加密
 这是ws模式例子，导入后修改服务器ip地址即可
