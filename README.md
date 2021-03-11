@@ -14,3 +14,10 @@ vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIui/meaYr3dz5qih5byP5L6L5a2QIiwNCiAgImFk
 ```
 客户端下载
 https://github.com/1265578519/v2ray-core/releases
+
+如果需要速度快的kcp模式
+```
+wget https://raw.githubusercontent.com/1265578519/v2ray-core/main/release/kcpconfig.json -O /etc/v2ray/config.json
+service v2ray restart
+cat /var/log/v2ray/error.log | grep started
+```
