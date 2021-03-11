@@ -24,3 +24,13 @@ service v2ray restart
 cat /var/log/v2ray/error.log | grep started
 ```
 客户端注意同时修改端口号和模式
+
+卸载方法
+```
+service v2ray stop
+chkconfig v2ray off
+rm -rf /etc/init.d/v2ray
+rm -rf /etc/v2ray #(配置文件)
+rm -rf /usr/bin/v2ray #(程序)
+rm -rf /var/log/v2ray #(日志)
+```
