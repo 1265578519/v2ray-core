@@ -23,5 +23,5 @@ require (
 	google.golang.org/genproto v0.0.0-20201014134559-03b6142f0dc9 // indirect
 	google.golang.org/grpc v1.33.0
 	google.golang.org/protobuf v1.25.0
-	h12.io/socks v1.0.1
+	h12.io/socks v1.0.3
 )
