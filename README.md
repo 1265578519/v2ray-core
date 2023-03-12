@@ -23,6 +23,12 @@ wget https://raw.githubusercontent.com/1265578519/v2ray-core/main/release/kcpcon
 service v2ray restart
 cat /var/log/v2ray/error.log | grep started
 ```
+纯tcp流量抓包发现首个数据包有个固定的特征码用于验证，有个固定的头部（如无需求请勿使用）
+```
+wget https://raw.githubusercontent.com/1265578519/v2ray-core/main/release/tcpconfig.json -O /etc/v2ray/config.json
+service v2ray restart
+cat /var/log/v2ray/error.log | grep started
+```
 客户端注意同时修改端口号和模式
 
 卸载方法
