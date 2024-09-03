@@ -119,6 +119,167 @@
                                         "tls"
                                 ]
                         }
+                },
+                {
+                        "port": 28004,
+                        "protocol": "vmess",
+                        "settings": {
+                                "clients": [
+                                        {
+                                                "id": "da5c5b2d-06ca-4363-9b4d-3a9e23ce291d",
+                                                "level": 1,
+                                                "alterId": 0
+                                        }
+                                ]
+                        },
+                        "streamSettings": {
+                                "network": "ws"
+                        },
+                        "sniffing": {
+                                "enabled": true,
+                                "destOverride": [
+                                        "http",
+                                        "tls"
+                                ]
+                        }
+                },
+                {
+                        "port": 28005,
+                        "protocol": "vmess",
+                        "settings": {
+                                "clients": [
+                                        {
+                                                "id": "da5c5b2d-06ca-4363-9b4d-3a9e23ce291d",
+                                                "level": 1,
+                                                "alterId": 0
+                                        }
+                                ]
+                        },
+                        "streamSettings": {
+                                "network": "ws"
+                        },
+                        "sniffing": {
+                                "enabled": true,
+                                "destOverride": [
+                                        "http",
+                                        "tls"
+                                ]
+                        }
+                },
+                {
+                        "port": 28006,
+                        "protocol": "vmess",
+                        "settings": {
+                                "clients": [
+                                        {
+                                                "id": "da5c5b2d-06ca-4363-9b4d-3a9e23ce291d",
+                                                "level": 1,
+                                                "alterId": 0
+                                        }
+                                ]
+                        },
+                        "streamSettings": {
+                                "network": "ws"
+                        },
+                        "sniffing": {
+                                "enabled": true,
+                                "destOverride": [
+                                        "http",
+                                        "tls"
+                                ]
+                        }
+                },
+                {
+                        "port": 28007,
+                        "protocol": "vmess",
+                        "settings": {
+                                "clients": [
+                                        {
+                                                "id": "da5c5b2d-06ca-4363-9b4d-3a9e23ce291d",
+                                                "level": 1,
+                                                "alterId": 0
+                                        }
+                                ]
+                        },
+                        "streamSettings": {
+                                "network": "ws"
+                        },
+                        "sniffing": {
+                                "enabled": true,
+                                "destOverride": [
+                                        "http",
+                                        "tls"
+                                ]
+                        }
+                },
+                {
+                        "port": 28008,
+                        "protocol": "vmess",
+                        "settings": {
+                                "clients": [
+                                        {
+                                                "id": "da5c5b2d-06ca-4363-9b4d-3a9e23ce291d",
+                                                "level": 1,
+                                                "alterId": 0
+                                        }
+                                ]
+                        },
+                        "streamSettings": {
+                                "network": "ws"
+                        },
+                        "sniffing": {
+                                "enabled": true,
+                                "destOverride": [
+                                        "http",
+                                        "tls"
+                                ]
+                        }
+                },
+                {
+                        "port": 28009,
+                        "protocol": "vmess",
+                        "settings": {
+                                "clients": [
+                                        {
+                                                "id": "da5c5b2d-06ca-4363-9b4d-3a9e23ce291d",
+                                                "level": 1,
+                                                "alterId": 0
+                                        }
+                                ]
+                        },
+                        "streamSettings": {
+                                "network": "ws"
+                        },
+                        "sniffing": {
+                                "enabled": true,
+                                "destOverride": [
+                                        "http",
+                                        "tls"
+                                ]
+                        }
+                },
+                {
+                        "port": 28010,
+                        "protocol": "vmess",
+                        "settings": {
+                                "clients": [
+                                        {
+                                                "id": "da5c5b2d-06ca-4363-9b4d-3a9e23ce291d",
+                                                "level": 1,
+                                                "alterId": 0
+                                        }
+                                ]
+                        },
+                        "streamSettings": {
+                                "network": "ws"
+                        },
+                        "sniffing": {
+                                "enabled": true,
+                                "destOverride": [
+                                        "http",
+                                        "tls"
+                                ]
+                        }
                 }
                 //include_ss
                 //include_socks
