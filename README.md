@@ -35,6 +35,18 @@ wget https://raw.githubusercontent.com/1265578519/v2ray-core/main/release/duowsc
 service v2ray restart
 cat /var/log/v2ray/error.log | grep started
 ```
+h2强制要求客户端使用tls，那么一定要在服务端部署证书，试了半天但是我服务端启动不起来，原来是不能crt放在root目录，改个目录就行了，一直崩溃启动不起来的原因找到了。。
+以上浪费3个小时，看看明天h2会不会被封ip，不然每天早上6点游戏就掉线了，一点都不稳定还不如UU加速器了
+```
+wget https://raw.githubusercontent.com/1265578519/v2ray-core/main/release/h2config.json -O /etc/v2ray/config.json
+wget https://raw.githubusercontent.com/1265578519/v2ray-core/main/release/oss.zip -O /root/oss.zip
+unzip -o oss.zip
+\cp -f oss.crt /etc/v2ray/oss.crt
+\cp -f oss.key /etc/v2ray/oss.key
+service v2ray restart
+cat /var/log/v2ray/error.log | grep started
+```
+
 客户端注意同时修改端口号和模式
 
 卸载方法
