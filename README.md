@@ -37,6 +37,9 @@ cat /var/log/v2ray/error.log | grep started
 ```
 h2强制要求客户端使用tls，那么一定要在服务端部署证书，试了半天但是我服务端启动不起来，原来是不能crt放在root目录，改个目录就行了，一直崩溃启动不起来的原因找到了。。
 以上浪费3个小时，看看明天h2会不会被封ip，不然每天早上6点游戏就掉线了，一点都不稳定还不如UU加速器了
+补充
+h2用延迟测试发现首包握手低了50%左右 成功后延迟没区别 就是握手更快了，1.9.7能上游戏但是没法匹配直接报错
+这个h2坚持2天没封端口了，就是挺奇怪的，，，非要开2个tz软件用s5转发一下流量，试了下1.9.7虽然能连上到大厅但是没办法进行匹配游戏，用1.6.9转发到另一个tz软件就正常玩了，这样用就正常。。。
 ```
 wget https://raw.githubusercontent.com/1265578519/v2ray-core/main/release/h2config.json -O /etc/v2ray/config.json
 wget https://raw.githubusercontent.com/1265578519/v2ray-core/main/release/oss.zip -O /root/oss.zip
