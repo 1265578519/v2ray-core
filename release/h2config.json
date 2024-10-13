@@ -20,6 +20,11 @@
                         "streamSettings": {
                                 "network": "h2",
                                 "security": "tls",
+                                "httpSettings": {
+                                "host": [
+                                "."
+                                ]
+                            },
                                 "tlsSettings": {
                                 "certificates": [
                                 {
