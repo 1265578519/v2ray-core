@@ -3,15 +3,16 @@
 # Please see the documentation for all configuration options:
 # https://help.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
 
-version: 2
-updates:
-  - package-ecosystem: "gomod"
-    directory: "/"
-    schedule:
-      interval: "daily"
-    open-pull-requests-limit: 10
-
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "daily"
+# 禁止自动更新提醒
+#version: 2
+#updates:
+#  - package-ecosystem: "gomod"
+#    directory: "/"
+#    schedule:
+#      interval: "daily"
+#    open-pull-requests-limit: 10
+#
+#  - package-ecosystem: "github-actions"
+#    directory: "/"
+#    schedule:
+#      interval: "daily"
