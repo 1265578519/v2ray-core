@@ -49,6 +49,18 @@ unzip -o oss.zip
 service v2ray restart
 cat /var/log/v2ray/error.log | grep started
 ```
+h2有问题，极限只能跑20-30M宽带，虽然很稳定不会封ip，但是不太科学，虽然说h2不被封才是好协议，正在测吞吐，ws 150M，h2 23M，ws+tls 109M，确认了，，，h2有问题
+不知道ws+tls怎么样了，以前用过封ip，感觉以前被封可能是有sni的问题，现在有了h2的配置文件经验也能成功把sni删了，ws+tls是多连接，h2服务器是单连接复用永远识别同一个端口号
+效果很理想，明天看看会不会封ip，这h2太憋屈了，居然只有30M网速 不科学！所以直接用ws的话，一天封一个端口，就是不知道tls了后还会不会封ip了，估计是代码里h2写了什么阻塞的bug，导致宽带上不去，不然还是很好用的
+```
+wget https://raw.githubusercontent.com/1265578519/v2ray-core/main/release/tlswsconfig.json -O /etc/v2ray/config.json
+wget https://raw.githubusercontent.com/1265578519/v2ray-core/main/release/oss.zip -O /root/oss.zip
+unzip -o oss.zip
+\cp -f oss.crt /etc/v2ray/oss.crt
+\cp -f oss.key /etc/v2ray/oss.key
+service v2ray restart
+cat /var/log/v2ray/error.log | grep started
+```
 
 客户端注意同时修改端口号和模式
 
